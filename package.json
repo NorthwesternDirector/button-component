@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/NorthwesternDirector/button-component/issues"
   },
-  "homepage": "https://github.com/NorthwesternDirector/button-component#readme"
+  "homepage": "https://github.com/NorthwesternDirector/button-component#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
