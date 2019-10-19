@@ -1,0 +1,24 @@
+{
+  "name": "button",
+  "version": "0.0.1",
+  "description": "button components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NorthwesternDirector/button-component.git"
+  },
+  "keywords": [
+    "vue",
+    "UI",
+    "components"
+  ],
+  "author": "ND",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NorthwesternDirector/button-component/issues"
+  },
+  "homepage": "https://github.com/NorthwesternDirector/button-component#readme"
+}
