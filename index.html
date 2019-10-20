@@ -32,14 +32,23 @@
             font-size: var(--font-size);
         }
     </style>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
-        <nd-button></nd-button>
+        <nd-button icon-name="settings"> 按钮</nd-button>
+        <nd-button icon-name="settings" icon-position="right">
+            按钮
+        </nd-button>
     </div>
     <script src="./src/main.js"></script>
-
+    <script src="//at.alicdn.com/t/font_1467253_qmgtqz591yo.js"></script>
 </body>
 
 </html>
