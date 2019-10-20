@@ -19,6 +19,9 @@ new Vue({
 //单元测试
 import chai from 'chai'
 const expect = chai.expect;
+import spies from 'chai-spies'
+chai.use(spies)
+
 //通过js把按钮写入页面中
 { //1.测试iconName属性
 
@@ -78,8 +81,8 @@ const expect = chai.expect;
     expect(order).to.eq("2");
     NDbutton.$el.remove(); //清除NDbutton内的元素
     NDbutton.$destroy(); //清除NDbutton对象
-} { //4.测试click事件
 
+} { //4.测试click事件
     const Constructor = Vue.extend(Button); //将Button组件转化为一个构造函数
     const NDbutton = new Constructor({ //创建一个NDbutton实例
         propsData: {
@@ -87,10 +90,9 @@ const expect = chai.expect;
         }
     })
     NDbutton.$mount();
-    NDbutton.$on('click', function() {
-        console.log(1)
-    })
+    let spy = chai.spy(function() {});
+    NDbutton.$on('click', spy); //"间谍"监听
     let button = NDbutton.$el;
     button.click();
-
+    expect(spy).to.have.been.called() //期待“间谍“函数被调用
 }
