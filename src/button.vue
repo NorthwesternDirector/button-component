@@ -1,7 +1,7 @@
 <template>
 
     <button class="nd-button" :class="{[`icon-${iconPosition}`]:true}">
-        <nd-icon v-if="iconName" :iconName="iconName" ></nd-icon>
+        <nd-icon class="icon" v-if="iconName" :iconName="iconName" ></nd-icon>
         <div class="icon-content">
             <slot></slot>
         </div>
@@ -26,6 +26,10 @@
 </script>
 
 <style lang="scss" scoped>
+    @keyframes spin {
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+    }
     .nd-button{
         font-size: var(--font-size);
         height: var(--button-height);
@@ -63,6 +67,9 @@
                 margin-right: 0;
                 margin-left: .3em;
             }
+        }
+        .loading{
+            animation: spin 1.2s infinite linear;
         }
     }
 </style>
