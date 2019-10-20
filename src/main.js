@@ -6,5 +6,8 @@ Vue.component('nd-button', Button)
 Vue.component('nd-icon', Icon)
 
 new Vue({
-    el: "#app"
+    el: "#app",
+    data: {
+        loading1: false
+    }
 })

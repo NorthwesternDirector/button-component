@@ -1,7 +1,8 @@
 <template>
 
-    <button class="nd-button" :class="{[`icon-${iconPosition}`]:true}">
-        <nd-icon class="icon" v-if="iconName" :iconName="iconName" ></nd-icon>
+    <button class="nd-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
+        <nd-icon class="icon" v-if="iconName && !loading" :iconName="iconName" ></nd-icon>
+        <nd-icon class="loading icon" v-if="loading" iconName="loading" ></nd-icon>
         <div class="icon-content">
             <slot></slot>
         </div>
@@ -20,6 +21,10 @@
                 validator(val){
                     return (val==="left" || val==="right")
                 }
+            },
+            loading:{
+                type:Boolean,
+                default:false
             }
         }
     }
