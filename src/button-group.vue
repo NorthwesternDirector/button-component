@@ -21,8 +21,10 @@ export default {
         display: inline-flex;
         vertical-align: middle;
         > .nd-button{
-            border-radius:0;  
-            margin-left: -1px;//解决边框重叠加厚问题
+            border-radius:0; 
+            &:not(:first-child) {
+                margin-left: -1px;//解决边框重叠加厚问题
+            };     
             &:first-child{
                 border-top-left-radius: var(--border-radius);
                 border-bottom-left-radius: var(--border-radius);
