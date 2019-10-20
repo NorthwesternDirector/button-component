@@ -11,7 +11,6 @@
 
 <script>
     export default {
-        // props:['iconName','iconPosition']
         props:{
             iconName:{},
             iconPosition:{
