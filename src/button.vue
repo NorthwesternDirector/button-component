@@ -1,5 +1,4 @@
 <template>
-
     <button class="nd-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
         <nd-icon class="icon" v-if="iconName && !loading" :iconName="iconName" ></nd-icon>
         <nd-icon class="loading icon" v-if="loading" iconName="loading" ></nd-icon>
