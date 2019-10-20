@@ -6,7 +6,13 @@
 
 <script>
 export default {
-    
+    mounted(){//异常子元素检测，可能导致样式错误
+        for(let node of this.$el.children){
+            if(node.nodeName.toLowerCase()!=='button'){
+                console.warn(`nd-button-group 的子元素应该为 g-button ，但你使用了 ${node.nodeName.toLowerCase()}`);  
+            }
+        }
+    }
 }
 </script>
 
