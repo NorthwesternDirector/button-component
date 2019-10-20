@@ -1,9 +1,7 @@
 <template>
 
     <button class="nd-button" :class="{[`icon-${iconPosition}`]:true}">
-        <svg v-if="iconName" class="icon">
-            <use :xlink:href="`#i-${iconName}`"></use>
-        </svg> 
+        <nd-icon v-if="iconName" :iconName="iconName" ></nd-icon>
         <div class="icon-content">
             <slot></slot>
         </div>
