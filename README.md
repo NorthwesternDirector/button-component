@@ -10,7 +10,19 @@
  ```
 
  ### 使用
- -使用<nd-button></nd-button>调用button组件
+ - 【暂时】需设置全局样式变量，才可自定义样式
+ ```
+ :root {
+    --button-height: 32px;
+    --font-size: 14px;
+    --button-bg: white;
+    --button-active-bg: #eee;
+    --border-radius: 4px;
+    --color: #999;
+    --border-color: #999;
+    --border-color-hover: #666;
+ }
+ ```
 
  1. 图标样式设置
  利用`icon-name`属性，设置图标的种类样式
@@ -36,4 +48,4 @@
 2. UI设计
 - 涉及内容 `slot插槽` `iconfont图标工具`的运用及巧用`em`单位 `父子组件传值` `v-if`控制按钮图标显示
 3. 测试
-- 涉及内容 `chai` `chai-spies`
+- 涉及内容 `chai` `chai-spies` `Karma` `Mocha` `Sinon` `Travis CI` `npm发布`
