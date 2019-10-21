@@ -48,4 +48,4 @@
 2. UI设计
 - 涉及内容 `slot插槽` `iconfont图标工具`的运用及巧用`em`单位 `父子组件传值` `v-if`控制按钮图标显示
 3. 测试
-- 涉及内容 `chai` `chai-spies` `Karma` `Mocha` `Sinon` `Travis CI` `npm发布`
+- 涉及内容 `chai断言库` `chai-spies`，自动测试：`Karma测试运行器` `Mocha测试框架` `Sinon`，持续集成：`Travis CI` `npm发布`
