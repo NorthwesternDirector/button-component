@@ -35,3 +35,5 @@
 - 涉及内容 `parcel` `sass` `Vue单文件组件` `css变量` `:root伪类选择器` 
 2. UI设计
 - 涉及内容 `slot插槽` `iconfont图标工具`的运用及巧用`em`单位 `父子组件传值` `v-if`控制按钮图标显示
+3. 测试
+- 涉及内容 `chai` `chai-spies`
