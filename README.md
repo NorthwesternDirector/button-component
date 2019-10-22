@@ -1,8 +1,10 @@
 ## 一个Vue按钮组件 
+<p align="center"><img width="400" src="https://github.com/NorthwesternDirector/button-component/blob/master/image/%E6%8C%89%E9%92%AE%E5%AE%9E%E4%BE%8B.png" alt="Vue logo"></p>
 
+<p align="center">
 [![Build Status](https://www.travis-ci.org/NorthwesternDirector/button-component.svg?branch=master)](https://www.travis-ci.org/NorthwesternDirector/button-component)
 ![npm](https://img.shields.io/npm/dw/button-component)
-
+</p>
 ### 介绍
 - 在Vue学习中尝试封装一个按钮组件
 
