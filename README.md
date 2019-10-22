@@ -5,6 +5,7 @@
 
 ### 介绍
 - 在Vue学习中尝试封装一个按钮组件
+
 ### 开始使用
 1. 添加CSS样式
    * 使用本组件请开启 `border-box`
@@ -45,9 +46,7 @@
    }
    ```
 
- ### 使用
- 
-
+ ### 文档
  1. 图标样式设置
  利用`icon-name`属性，设置图标的种类样式，可选值为：loading，settings，download，thumbs-up，down，left，right 
  ```
@@ -63,10 +62,8 @@
  ```
  loading="true" //将图标设置为一个旋转加载图标
  ```
-  
-
-
-#### part1
+ 
+### 记录
 1. 框架构建
 - 涉及内容 `parcel` `sass` `Vue单文件组件` `css变量` `:root伪类选择器` 
 2. UI设计
