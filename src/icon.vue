@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import './svg' //导入svg样式，解决用户自己需要添加script标签的问题
 export default {
     props:['iconName']
 }

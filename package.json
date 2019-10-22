@@ -1,5 +1,5 @@
 {
-    "name": "nd-button",
+    "name": "nd-nd-button",
     "version": "0.0.3",
     "description": "button components",
     "main": "dist/index.js",

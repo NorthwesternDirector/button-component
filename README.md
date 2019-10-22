@@ -1,31 +1,55 @@
-## 尝试封装一个按钮组件
+## nd-button 一个Vue按钮组件 
 
 [![Build Status](https://www.travis-ci.org/NorthwesternDirector/button-component.svg?branch=master)](https://www.travis-ci.org/NorthwesternDirector/button-component)
+![npm](https://img.shields.io/npm/dw/button-component)
 
-### 安装
- * 使用本组件请开启 `border-box`
- 
- ```
- *{box-sizing: border-box}
- ```
+### 介绍
+- 在Vue学习中尝试封装一个按钮组件
+### 开始使用
+1. 添加CSS样式
+   * 使用本组件请开启 `border-box`
+   ```
+   *,*::before,*::after{box-sizing: border-box}
+   ```
+   IE 8 及以上浏览器都支持此样式
+   * 【暂时】需设置全局样式变量，自定义样式
+   ```
+   :root {
+      --button-height: 32px;
+      --font-size: 14px;
+      --button-bg: white;
+      --button-active-bg: #eee;
+      --border-radius: 4px;
+      --color: #999;
+      --border-color: #999;
+      --border-color-hover: #666;
+   }
+   ```
+   IE 15 及以上浏览器支持此样式，建议使用Chrome
+
+2. 安装 nd-nd-button
+   ```
+   npm i -S nd-nd-button --save
+   ```
+3. 引入 nd-nd-button
+   ```
+   improt {Button, ButtonGroup, Icon} from 'nd-nd-button'
+   import 'nd-nd-button/dist/index.css'
+
+   export default{
+      name:'app',
+      components:{
+         'nd-button':Button,
+         'nd-icon':Icon
+      }
+   }
+   ```
 
  ### 使用
- - 【暂时】需设置全局样式变量，才可自定义样式
- ```
- :root {
-    --button-height: 32px;
-    --font-size: 14px;
-    --button-bg: white;
-    --button-active-bg: #eee;
-    --border-radius: 4px;
-    --color: #999;
-    --border-color: #999;
-    --border-color-hover: #666;
- }
- ```
+ 
 
  1. 图标样式设置
- 利用`icon-name`属性，设置图标的种类样式
+ 利用`icon-name`属性，设置图标的种类样式，可选值为：loading，settings，download，thumbs-up，down，left，right 
  ```
  icon-name="settings" //使用settings图标
  ```
