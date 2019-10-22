@@ -1,6 +1,6 @@
 ## 尝试封装一个按钮组件
 
-作者：ND
+[![Build Status](https://www.travis-ci.org/NorthwesternDirector/button-component.svg?branch=master)](https://www.travis-ci.org/NorthwesternDirector/button-component)
 
 ### 安装
  * 使用本组件请开启 `border-box`
