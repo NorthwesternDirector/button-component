@@ -1,4 +1,4 @@
-## nd-button 一个Vue按钮组件 
+## 一个Vue按钮组件 
 
 [![Build Status](https://www.travis-ci.org/NorthwesternDirector/button-component.svg?branch=master)](https://www.travis-ci.org/NorthwesternDirector/button-component)
 ![npm](https://img.shields.io/npm/dw/button-component)
@@ -62,7 +62,7 @@
  ```
  loading="true" //将图标设置为一个旋转加载图标
  ```
- 
+
 ### 记录
 1. 框架构建
 - 涉及内容 `parcel` `sass` `Vue单文件组件` `css变量` `:root伪类选择器` 

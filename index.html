@@ -36,9 +36,10 @@
 
 <body>
     <div id="app">
-        <nd-button icon-name="settings" :loading="loading2" @click="loading2=!loading2"> 按钮</nd-button>
+        <nd-button icon-name="settings" :loading="loading2" @click="loading2=!loading2"> 设置</nd-button>
         <nd-button icon-name="download" icon-position="right" :loading="loading3" @click="loading3= !loading3">保存</nd-button>
         <nd-button icon-name="thumbs-up" icon-position="right" :loading="loading1" @click="loading1= !loading1">点赞</nd-button>
+        <nd-button icon-name="thumbs-up" icon-position="right" loading=true @click="loading1= !loading1">加载</nd-button>
         <nd-button-group>
             <nd-button icon-name="left">上一页</nd-button>
             <nd-button>更多</nd-button>
